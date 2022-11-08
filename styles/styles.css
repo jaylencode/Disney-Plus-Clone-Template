@@ -1,0 +1,380 @@
+/* --Importing Font-- */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap");
+
+/* --Global Reset-- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* --Styling Body-- */
+body {
+  position: relative;
+  width: 100%;
+  background: #040814;
+}
+
+/* --Styling Navbar-- */
+.navbar {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 4%;
+  background: #040814;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+}
+
+/* --Styling Logo-Brand-- */
+.logo-brand {
+  height: 70px;
+}
+
+/* --Styling Nav-Links-- */
+.nav-links {
+  margin-top: 10px;
+  display: flex;
+  list-style: none;
+}
+
+/* --Styling Nav-Items-- */
+.nav-items a {
+  text-decoration: none;
+  margin-left: 20px;
+  text-transform: capitalize;
+  color: #fff;
+  opacity: 0.9;
+}
+
+/* --Styling Right-Container-- */
+.right-container {
+  display: block;
+  margin-left: auto;
+}
+
+/* --Styling Search-Box-- */
+.search-box {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  background: transparent;
+  outline: none;
+  height: 30px;
+  color: #fff;
+  width: 250px;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+/* --Styling Search-Box:focus-- */
+.search-box:focus {
+  width: 400px;
+  border-color: #0162e5;
+}
+
+/* --Styling Sub-Btn-- */
+.sub-btn {
+  background: #0162e5;
+  height: 30px;
+  padding: 0 20px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 0 10px;
+}
+
+/* --Styling Login-Link-- */
+.login-link {
+  color: #fff;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* --Styling Carousel-Container-- */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  padding: 20px 0;
+  overflow-x: hidden;
+  margin-top: 80px;
+}
+
+/* --Styling Carousel-- */
+.carousel {
+  display: flex;
+  width: 92%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  background: #000;
+}
+
+/* --Styling Slider-- */
+.slider {
+  flex: 0 0 auto;
+  margin-right: 30px;
+  position: relative;
+  background: #00000080;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+
+/* --Styling Slider img-- */
+.slider img {
+  width: 70%;
+  min-height: 100%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+}
+
+/* --Styling Slide-Content-- */
+.slide-content {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(to right, #030b17 80%, #0c111b00);
+  color: #fff;
+}
+
+/* Styling Movie-Title */
+.movie-title {
+  padding-left: 50px;
+  text-transform: capitalize;
+  margin-top: 80px;
+}
+
+/* Styling Movie-Description */
+.movie-des {
+  width: 80%;
+  line-height: 30px;
+  padding-left: 50px;
+  margin-top: 30px;
+  opacity: 0.8;
+}
+
+/* Styling Video-Card-Container */
+.video-card-container {
+  position: relative;
+  width: 92%;
+  margin: auto;
+  height: 10vw;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+/* Styling Video-Card */
+.video-card {
+  position: relative;
+  min-width: calc(100% / 5 - 10px);
+  width: calc(100% / 5 - 10px);
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #030b17;
+}
+
+/* Styling Video-Card-Image and Card-Video*/
+.video-card-image,
+.card-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Styling Card-Video */
+.card-video {
+  position: absolute;
+}
+
+/* Styling Video-Card:hover Video-Card-Image */
+.video-card:hover .video-card-image {
+  display: none;
+}
+
+/* Styling Title */
+.title {
+  color: #fff;
+  opacity: 0.9;
+  padding-left: 4%;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* Styling Movies-List */
+.movies-list {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  margin: 10px 0 20px;
+}
+
+/* Styling Card-Container */
+.card-container {
+  position: absolute;
+  width: 92%;
+  height: 220px;
+  padding-left: 10px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+}
+
+/* Styling Card-Container::-webkit-scrollbar */
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Styling Card */
+.card {
+  position: relative;
+  min-width: 150px;
+  width: 150px;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 10px;
+  transition: .5s;
+  background: #000;
+}
+
+/* Styling Card-image */
+.card-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling Card-Body */
+.card-body {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to bottom, #04080f00, #192133);
+  padding: 10px;
+  transition: 0.5s;
+}
+
+/* Styling Card:hover */
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* Styling Card:hover Card-Body */
+.card:hover .card-body {
+  opacity: 1;
+}
+
+/* Styling Name */
+.name {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 60%;
+}
+
+/* Styling Description */
+.des {
+  color: #fff;
+  opacity: 0.8;
+  margin: 5px 0;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+/* Styling Watchlist-Btn */
+.watchlist-btn {
+position: absolute;
+width: 100%;
+text-transform: capitalize;
+background: none;
+border: none;
+font-weight: 500;
+text-align: center;
+color: #ffffff80;
+margin: 5px 0;
+cursor: pointer;
+padding: 10px 5px;
+border-radius: 5px;
+}
+
+/* Styling Watchlist-Btn::before */
+.watchlist-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 35px;
+  height: 35px;
+  background-image: url(/assets/images/add.png);
+  background-size: cover;
+  transform: scale(0.4);
+}
+
+/* Styling Watchlist-Btn:hover */
+.watchlist-btn:hover {
+  color: #fff;
+  background: #ffffff80;
+}
+
+/* Styling Pre-Btn, Nxt-btn */
+.pre-btn,
+.nxt-btn {
+  position: absolute;
+  top: 0;
+  width: 5%;
+  height: 100%;
+  z-index: 2;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.pre-btn {
+  left: 0;
+  background: linear-gradient(to right, #0c111b 0%, #0c111b00);
+}
+
+.nxt-btn {
+  right: 0;
+  background: linear-gradient(to left, #0c111b 0%, #0c111b00);
+}
+
+.pre-btn img,
+.nxt-btn img {
+  width: 15px;
+  height: 20px;
+  opacity: 0;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
